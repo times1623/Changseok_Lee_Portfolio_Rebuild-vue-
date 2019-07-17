@@ -1,0 +1,68 @@
+section {
+  margin-top: 20px;
+}
+
+.boxHelper {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid red;
+}
+
+.boxHelperS {
+  background-color: #000000;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.boxHelperT {
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+
+.text-wrapper {
+  background-color: #000000;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  background: #2C3047;
+  height: 300px;
+}
+
+.viewWorks {
+  background-color: purple;
+  height: 50px;
+}
+
+
+#aboutMe {
+  text-align: left;
+  background: #2C3047;
+  height: 300px;
+  color: white;
+}
+
+#aboutMe hr {
+  width: 10%;
+  background-color: red;
+  float: left;
+}
+
+#aboutMe p {
+  clear: both;
+}
+
+footer {
+  background: rgb(14,14,14);
+  height: 150px;
+}
