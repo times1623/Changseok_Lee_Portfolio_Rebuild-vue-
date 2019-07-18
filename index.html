@@ -6,72 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body class="container-fluid">
+
 
   <header class="row">
     <div class="col-6 col-md-4">
       <p class="boxHelper">Logo</p>
     </div>
 
-    <nav class="col-6 col-md-8">
-      <p class="boxHelper">Main Nav</p>
-    </nav>
+    <div class="hiddenNav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <h2 class="col-12 mx-auto boxHelper">Hello! I'm Lee</h2><br />
-    <button class="col-4 mx-auto boxHelper">Get Started <i class="fas fa-arrow-right"></i></button>
+    <div class="ham">
+    	<span class="bar1"></span>
+    	<span class="bar2"></span>
+    	<span class="bar3"></span>
+    </div>
+
+    <h2 class="col-12 mx-auto" id="headerInt">Hello! I'm Lee</h2><br />
+    <button class="col-4 mx-auto" id="headerBut">Get Started <i class="fas fa-arrow-right"></i></button>
   </header>
 
-  <section class="row no-gutters">
+  <section class="row" id="skills">
     <h2 class="hide">My Skills</h2>
 
-    <div class="col-md-4 text-wrapper">
-      <h2>Skill Name</h2>
-      <p>Lorem Ipsum is simply dummy
-        text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s,</p>
+    <div class="col-md-4">
+      <h2>THE EXPERIENCE</h2>
+      <p>Your client experience with me will be nothing short of a pleasurable.
+        My easy going demeanour perfectly co exists with my professionalism and need to please attitude.
+        You will never walk away with anything except your dream vision.</p>
+        <a href="#">Get Started  <i class="fas fa-arrow-right"></i></a>
     </div>
 
-    <div class="col-md-4 text-wrapper">
-      <h2>Skill Name</h2>
-      <p>Lorem Ipsum is simply dummy
-        text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s,</p>
+    <div class="col-md-4">
+      <h2>THE INNOVATION</h2>
+      <p>Your client experience with me will be nothing short of a pleasurable.
+        My easy going demeanour perfectly co exists with my professionalism and need to please attitude.
+        You will never walk away with anything except your dream vision.</p>
+        <a href="#">Get Started  <i class="fas fa-arrow-right"></i></a>
     </div>
 
-    <div class="col-md-4 text-wrapper">
-      <h2>Skill Name</h2>
-      <p>Lorem Ipsum is simply dummy
-        text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard
-        dummy text ever since the 1500s,</p>
+    <div class="col-md-4">
+      <h2>THE CREATIVE</h2>
+      <p>Your client experience with me will be nothing short of a pleasurable.
+         My easy going demeanour perfectly co exists with my professionalism and need to please attitude.
+         You will never walk away with anything except your dream vision.</p>
+        <a href="#">Get Started  <i class="fas fa-arrow-right"></i></a>
     </div>
 
   </section>
 
-  <section class="row no-gutters">
+  <section class="row no-gutters img-fluid" id="works">
     <h2 class="hide">My Works</h2>
 
     <div class="col-12 col-md-6">
-      <p class="boxHelper">Main Work</p>
+      <img src="images/work1.jpg" alt="work1">
     </div>
 
-    <div class="col-12 col-md-6 boxHelper">
-      <div class="row">
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
+    <div class="col-12 col-md-6">
+      <div class="row no-gutters">
+      <div class="col-12 col-md-6"><img src="images/work2.jpg" alt="work2"></div>
+      <div class="col-12 col-md-6"><img src="images/work3.jpg" alt="work3"></div>
+      <div class="col-12"><img src="images/work6.jpg" alt="work4" id="wSix"></div>
       </div>
     </div>
 
   </section>
 
   <div class="row viewWorks">
-    <button class="col-4 mx-auto boxHelper">View All Works</button>
+    <button class="col-2 mx-auto boxHelper">View All Works</button>
   </div>
 
   <section class="row" id="aboutMe">
@@ -80,12 +96,16 @@
     <div class="col-12 mx-auto">
       <h2>About Changseok Lee</h2>
       <hr>
-      <p>Lorem Ipsum is simply dummy
-        text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard
+      <p>Lorem Ipsum is simply dummy<br />
+        text of the printing and typesetting industry.<br />
+        Lorem Ipsum has been the industry's standard<br />
         dummy text ever since the 1500s,</p>
     </div>
   </section>
+
+  <div class="row promoLine">
+    <button class="col-2 mx-auto">CONTACT ME!!!</button>
+  </div>
 
   <section class="row no-gutters">
     <h2 class="hide">My Hobbies</h2>
@@ -93,12 +113,41 @@
     <div class="col-12 col-md-6">
     </div>
 
-    <div class="col-12 col-md-6 boxHelper">
+    <div class="col-12 col-md-6" id="subHobbies">
       <div class="row">
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
-      <div class="col-12 col-md-6"><p class="boxHelperT">Sub Work</p></div>
+
+      <div class="col-12 col-md-6">
+      <h2>Interactive</h2>
+      <p>Websites should be simple and to the point.
+      I believe a simple design can get a viewer to come to the site,
+      find what they are looking for
+      and follow a call to action in one swift motion.</p>
+      </div>
+
+      <div class="col-12 col-md-6">
+      <h2>Creative Think</h2>
+      <p>Websites should be simple and to the point.
+      I believe a simple design can get a viewer to come to the site,
+      find what they are looking for
+      and follow a call to action in one swift motion.</p>
+      </div>
+
+      <div class="col-12 col-md-6">
+      <h2>Branding</h2>
+      <p>Websites should be simple and to the point.
+      I believe a simple design can get a viewer to come to the site,
+      find what they are looking for
+      and follow a call to action in one swift motion.</p>
+      </div>
+
+      <div class="col-12 col-md-6">
+      <h2>Motion</h2>
+      <p>Websites should be simple and to the point.
+      I believe a simple design can get a viewer to come to the site,
+      find what they are looking for
+      and follow a call to action in one swift motion.</p>
+      </div>
+
       </div>
     </div>
 
@@ -108,11 +157,18 @@
     <h2 class="hide">Main Footer</h2>
 
     <div class="col-12 col-md-6">
-      <p class="boxHelper">Copy Right</p>
+      <p>© 2019 Changseok Lee Dot Creative. All rights reserved.</p>
     </div>
 
     <div class="col-12 col-md-6">
-      <p class="boxHelper">Social Media</p>
+      <nav id="footerNav">
+        <h2 class="hide">Footer Nav</h2>
+      <ul>
+      <li><a id="a" href="#"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a id="b" href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a id="c" href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      </nav>
     </div>
 
   </footer>
