@@ -8,6 +8,7 @@ console.log('stuff fired');
 
 var hamNav = document.querySelector('.ham');
 var hideNav = document.querySelector('.hiddenNav');
+var scDown = document.querySelector('#scrollD');
 
 function toggleNav(){
   hamNav.classList.toggle('active');
@@ -19,10 +20,20 @@ function toggleNav(){
     hideNav.classList.add('hiddenNav');
   }
   console.log(hamNav);
+  console.log(scDown);
 }
 
 hamNav.addEventListener('click', toggleNav, false);
 
+scDown.addEventListener('click', function () {
+  console.log(scDown);
+  window.scroll({
+    top: 900,
+    left: 0,
+    behavior: 'smooth'
+  });
+
+});
 
 
 

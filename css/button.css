@@ -1,0 +1,53 @@
+
+.button:focus {
+  outline: none;
+}
+
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  padding: 1em 2em;
+  background: none;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  outline: 4px solid #FFF;
+}
+
+.button::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  right: 50%;
+  bottom: 0px;
+  opacity: 0;
+  color: #3f51b5;
+  z-index: -1;
+}
+
+.button:hover::before {
+  opacity: 1;
+  background-color: #cc879e;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button,
+.button:before {
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  outline: 4px solid #cc879e;
+  letter-spacing: 3px;
+}

@@ -15,9 +15,9 @@ body{
 header {
   height:100vh;
   background-color: #000000;
-  background:url('../images/head_bck.jpg') center center no-repeat fixed;
+  background:url('../images/h_bckgrd.jpg') center center no-repeat fixed;
   background-size: cover;
-  filter: grayscale(100%);
+  filter: grayscale(1);
 }
 
 #headerInt {
@@ -132,7 +132,7 @@ header #headerBut {
   color: white;
   background: url(../images/cont_bckgrd.jpg) center center no-repeat fixed;
   background-size: cover;
-  filter: grayscale(100%);
+  filter: grayscale(1);
 }
 
 #aboutMe hr {
@@ -174,10 +174,9 @@ header #headerBut {
 
 .promoLine button {
   background: none;
-  border: 3px solid white;
   padding: 0;
   color: white;
-  width: 60%;
+  width: 30%;
   padding: .5em;
 }
 

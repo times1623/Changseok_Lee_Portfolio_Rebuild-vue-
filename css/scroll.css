@@ -1,0 +1,66 @@
+#scrollD {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%)
+}
+
+.scrollDown {
+  color: #000;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 1px;
+  width: 26px;
+  height: 45px;
+  border: solid 2px #fff;
+  border-radius: 26px;
+}
+
+.scrollDown:before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 11px;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 100%;
+  animation-name: dot1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.scrollDown:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 100%;
+  opacity: 1;
+  animation-name: dot2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dot1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 9px)
+  }
+}
+
+@keyframes dot2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 9px)
+  }
+}
