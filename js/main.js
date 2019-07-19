@@ -9,6 +9,7 @@ console.log('stuff fired');
 var hamNav = document.querySelector('.ham');
 var hideNav = document.querySelector('.hiddenNav');
 var scDown = document.querySelector('#scrollD');
+var hotbod = document.querySelector("#headerInt");
 
 function toggleNav(){
   hamNav.classList.toggle('active');
@@ -34,6 +35,10 @@ scDown.addEventListener('click', function () {
   });
 
 });
+
+window.onload = function() {
+  hotbod.classList.add('animate');
+};
 
 
 
