@@ -10,6 +10,7 @@ var hamNav = document.querySelector('.ham');
 var hideNav = document.querySelector('.hiddenNav');
 var scDown = document.querySelector('#scrollD');
 var hotbod = document.querySelector("#headerInt");
+var togOn = document.querySelector('#tCon');
 
 function toggleNav(){
   hamNav.classList.toggle('active');
@@ -22,6 +23,7 @@ function toggleNav(){
   }
   console.log(hamNav);
   console.log(scDown);
+  console.log(togOn);
 }
 
 hamNav.addEventListener('click', toggleNav, false);
@@ -30,7 +32,6 @@ scDown.addEventListener('click', function () {
   console.log(scDown);
   window.scroll({
     top: 900,
-    left: 0,
     behavior: 'smooth'
   });
 
@@ -39,6 +40,8 @@ scDown.addEventListener('click', function () {
 window.onload = function() {
   hotbod.classList.add('animate');
 };
+
+
 
 
 

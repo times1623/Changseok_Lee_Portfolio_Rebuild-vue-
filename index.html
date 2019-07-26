@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/textanime.css">
+    <link rel="stylesheet" href="css/contactForm.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -188,6 +189,7 @@
       <div class="row">
 
       <div class="col-12 col-md-6">
+      <i class="fas fa-mobile-alt"></i>
       <h2>Interactive</h2>
       <p>Websites should be simple and to the point.
       I believe a simple design can get a viewer to come to the site,
@@ -196,6 +198,7 @@
       </div>
 
       <div class="col-12 col-md-6">
+      <i class="fas fa-lightbulb"></i>
       <h2>Creative Think</h2>
       <p>Websites should be simple and to the point.
       I believe a simple design can get a viewer to come to the site,
@@ -204,6 +207,7 @@
       </div>
 
       <div class="col-12 col-md-6">
+      <i class="fas fa-band-aid"></i>
       <h2>Branding</h2>
       <p>Websites should be simple and to the point.
       I believe a simple design can get a viewer to come to the site,
@@ -212,6 +216,7 @@
       </div>
 
       <div class="col-12 col-md-6">
+      <i class="fas fa-toggle-on" id="tCon"></i>
       <h2>Motion</h2>
       <p>Websites should be simple and to the point.
       I believe a simple design can get a viewer to come to the site,
@@ -223,6 +228,29 @@
     </div>
 
   </section>
+
+  <section class="row cont-class">
+    <h2 class="hide">Conteact Section</h2>
+    <div class="col-12" id="section-wrapper" style="background-color: #161616;">
+      
+    <div class="col-10 col-md-4 mx-auto form-wrapper">
+
+        <!-- Build connect.php first and connect it to the contact form tag here -->
+        <!-- the action of form tag should be changed to includes/connect.php and run php through it-->
+        <form action="#" method="POST" id="form-style">
+        <input type="text" value="" name="fname" placeholder="First name" id="fname" required><br /><br />
+        <input type="text" value="" name="lname" placeholder="Last name" id="lname" required><br /><br />
+        <input type="text" value="" name="email" placeholder="Email" id="email" required><br /><br />
+        <input type="text" value="" name="phone" placeholder="Phone Number" id="phone" required><br /><br />
+        <input type="text" value="" name="comment" placeholder="Comment Here" id="comment" required><br /><br />
+        <button type="submit" name="submit" value="submit" id="submit">Submit</button>
+      </form>
+      
+    </div>
+
+  </div>
+    
+</section>
 
   <footer class="row">
     <h2 class="hide">Main Footer</h2>
@@ -248,6 +276,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="js/contact.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </body>
 </html>

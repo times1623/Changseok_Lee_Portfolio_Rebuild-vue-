@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Oxygen', sans-serif !important;
+  font-family: 'Oxygen', sans--rif !important;
   text-transform: uppercase !important;
 }
 
@@ -118,7 +118,7 @@ header #headerBut {
   transform: scale(0.98);
   background-color: rgb(82, 82, 82);
   box-shadow: none;
-  transition:: none;
+  transition: none;
 }
 
 /* Works css ends from here */
@@ -164,6 +164,11 @@ header #headerBut {
   font-weight: lighter;
 }
 
+#subHobbies div i {
+  float: right;
+  font-size: 20px;
+}
+
 /* About css ends from here */
 
 .promoLine {
@@ -180,7 +185,18 @@ header #headerBut {
   padding: .5em;
 }
 
+/* Contact Form styling starts from here */ 
 
+.cont-class #section-wrapper {
+  background-color: #20223B;
+}
+
+.form-wrapper {
+  padding: 1.5rem;
+} 
+
+
+/* Contact Form styling ends here */ 
 
 /* Footer css starts from here */
 
