@@ -12,11 +12,19 @@
         console.log(fname, lname, email, phone, comment);
 
         if(fname == "" || lname == "" || email == "" || phone == "" || comment == ""){
+            
             alert("you missing some required field");
+        
+        }else if(email.includes('@') == false){
+         
+            console.log("Your email is not valid");
+            alert("Your email is not valid");
+
         }else{
             
             console.log("functionality works successfully");
-            window.location.href = ' includes/index.php';
+            alert("Thank you for your contact!! I hope we can meet up soon");
+            window.location.reload();
         }
 
     }
