@@ -11,6 +11,11 @@ var hideNav = document.querySelector('.hiddenNav');
 var scDown = document.querySelector('#scrollD');
 var hotbod = document.querySelector("#headerInt");
 var togOn = document.querySelector('#tCon');
+var showWorks = document.querySelector('.portBut');
+var scrollTop = document.querySelector('#scTop');
+
+// console.log(scrollTop);
+
 
 function toggleNav(){
   hamNav.classList.toggle('active');
@@ -41,6 +46,19 @@ window.onload = function() {
   hotbod.classList.add('animate');
 };
 
+showWorks.addEventListener("click", function() {
+  window.location.href = "portfolio.html";
+
+});
+
+
+scrollTop.addEventListener("click", function() {
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+
+  });
+});
 
 
 

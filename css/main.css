@@ -9,6 +9,32 @@ body{
   display: none;
 }
 
+.boxHelper {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.boxHelper p {
+  color: white;
+  background-color: rgb(43, 43, 43);
+}
+
+.workImg {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  /* width: 100%;  */
+  height: 80%;
+  text-align: center;
+  border: 1px solid white;
+}
+/* 
+#workSec div img {
+ width: 100%;
+ height: auto;
+} */
+
 /*This is the end of default setup*/
 
 /* Header css starts from here */
@@ -99,13 +125,20 @@ header #headerBut {
 }
 
 .viewWorks button {
-  color: white;
   background-color: rgb(120, 120, 120);
   font-size: 15px;
   width: 60%;
   border: none;
   padding: .5em;
   box-shadow: 3px 3px 3px rgba(191, 191, 191, 0.7);
+}
+
+.viewWorks button a {
+  color: white;
+}
+
+.viewWorks button a:hover {
+  text-decoration: none;
 }
 
 .viewWorks button:hover {
@@ -234,3 +267,11 @@ footer div p{
 }
 
 /* Footer css ends from here */
+
+#scTop .fa-caret-square-up {
+  color: rgb(87, 189, 69);
+  font-size: 3em;
+  position: fixed;
+  top:93%;
+  left: 96%;
+}
